@@ -1,0 +1,4 @@
+{
+  "name": "thoughtspot-embed-react-app",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22"
+}

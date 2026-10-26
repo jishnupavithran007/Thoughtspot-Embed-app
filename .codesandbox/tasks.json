@@ -1,0 +1,17 @@
+{
+  "setupTasks": [
+    { "name": "Install react-app dependencies", "command": "cd react-app && npm install" }
+  ],
+  "tasks": {
+    "dev": {
+      "name": "react-app dev server",
+      "command": "cd react-app && __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=.csb.app npm run dev -- --host",
+      "runAtStart": true,
+      "preview": { "port": 5173 }
+    },
+    "build": {
+      "name": "react-app build",
+      "command": "cd react-app && npm run build"
+    }
+  }
+}

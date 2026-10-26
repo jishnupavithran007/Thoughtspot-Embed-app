@@ -1,9 +1,10 @@
-const USERNAME = import.meta.env.VITE_TS_USERNAME || '';
-const HOST = import.meta.env.VITE_TS_HOST || '';
+const USERNAME = import.meta.env.VITE_TS_USERNAME || 'tsadmin';
+const HOST = import.meta.env.VITE_TS_HOST || 'https://172.32.24.133:8443';
 
-const LIVEBOARD_ID = import.meta.env.VITE_TS_LIVEBOARD_ID || '';
+const LIVEBOARD_ID = import.meta.env.VITE_TS_LIVEBOARD_ID || '9bd202f5-d431-44bf-9a07-b4f7be372125';
 const VIZ_ID = import.meta.env.VITE_TS_VIZ_ID || '';
 const WORKSHEET_ID = import.meta.env.VITE_TS_WORKSHEET_ID || '';
+
 
 const LINKS = {
     DOCS: {

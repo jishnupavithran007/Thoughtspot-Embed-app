@@ -35,6 +35,19 @@ const embedConfig = {
         additionalFlags:{
             excludeConfigFromURL: true,
         },
+        liveboardOverride: {
+            dataSourceOverride: [{
+                // dataSourceIdentifier: '540c4503-5bc7-4727-897b-f7f4d78dd2ff',
+                    filterQuery: [{
+                        // ambiguousQuery: ["Tab 2", "Group 2"],
+                        filterQueryToken: 'Color = blue',
+
+                    }],
+                    parameterQuery:[{
+                        parameterQueryToken: "Integer Range Param = 2"
+                    }]
+            }],
+        },
     },
 
     liveboardConfig: {
@@ -84,6 +97,21 @@ const embedConfig = {
         hideIrrelevantChipsInLiveboardTabs: true,
         coverAndFilterOptionInPDF: true,
         pageId: Page.Home,
+        liveboardOverrides: {
+            "9bd202f5-d431-44bf-9a07-b4f7be372125":{
+                dataSourceOverride: [{
+                    // dataSourceIdentifier: '540c4503-5bc7-4727-897b-f7f4d78dd2ff',
+                        filterQuery: [{
+                            // ambiguousQuery: ["Tab 2", "Group 2"],
+                            filterQueryToken: 'Color = red',
+
+                        }],
+                        parameterQuery:[{
+                            parameterQueryToken: "Integer Range Param = 2"
+                        }]
+                }],
+            }
+        },
     },
 
     searchConfig: {
